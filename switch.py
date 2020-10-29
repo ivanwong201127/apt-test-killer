@@ -53,8 +53,6 @@ while question_req:
         process_queue.pop(0)
     for _ in range(3):
         testing_answer = [questions[i][v] for i,v in enumerate(current_iter)]
-        print(current_iter)
-        print(testing_answer)
         if test_answer(start_colour,testing_answer):
             print("Answer:" + str(testing_answer))
             found_answer = True
